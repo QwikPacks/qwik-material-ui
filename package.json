@@ -1,5 +1,5 @@
 {
-  "name": "@esthersoftwaredev/qwik-material-ui",
+  "name": "@qwik-material-ui",
   "version": "0.1.0",
   "description": "A Qwik-native Material Design component library using SCSS",
   "main": "dist/index.js",
