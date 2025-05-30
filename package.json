@@ -40,12 +40,12 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QuickPacks/qwik-material-ui.git"
+    "url": "git+https://github.com/QwikPacks/qwik-material-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/QuickPacks/qwik-material-ui/issues"
+    "url": "https://github.com/QwikPacks/qwik-material-ui/issues"
   },
-  "homepage": "https://github.com/QuickPacks/qwik-material-ui#readme",
+  "homepage": "https://github.com/QwikPacks/qwik-material-ui#readme",
   "peerDependencies": {
     "@builder.io/qwik": "^1.14.1"
   },
