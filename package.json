@@ -1,6 +1,6 @@
 {
   "name": "qwik-material-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Qwik-native Material Design component library using SCSS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -20,7 +20,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build && tsc --emitDeclarationOnly --outDir dist",
+    "build": "vite build --config vite.config.lib.ts",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.ssr.tsx",
     "build.types": "tsc --emitDeclarationOnly --outDir dist",
@@ -34,7 +34,12 @@
     "start": "vite --open --mode ssr",
     "qwik": "qwik"
   },
-  "keywords": ["qwik", "material-design", "ui-components", "scss"],
+  "keywords": [
+    "qwik",
+    "material-design",
+    "ui-components",
+    "scss"
+  ],
   "author": "Esther White",
   "license": "MIT",
   "private": false,
@@ -51,8 +56,8 @@
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.14.1",
-    "@types/node": "20.14.11",
     "@eslint/js": "latest",
+    "@types/node": "20.14.11",
     "eslint": "9.25.1",
     "eslint-plugin-qwik": "^1.14.1",
     "globals": "16.0.0",
@@ -61,6 +66,7 @@
     "typescript": "5.4.5",
     "typescript-eslint": "8.26.1",
     "vite": "5.3.5",
+    "vite-plugin-dts": "^4.5.4",
     "vite-tsconfig-paths": "^4.2.1"
   }
 }

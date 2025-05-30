@@ -1,65 +1,61 @@
-# Qwik City App ⚡️
+# Qwik Material UI ⚡️
 
-- [Qwik Docs](https://qwik.dev/)
-- [Discord](https://qwik.dev/chat)
-- [Qwik GitHub](https://github.com/QwikDev/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
+### qwik-material-ui
 
----
+A Qwik-native Material Design component library using SCSS.  
+Provides Google Material Design components optimized for the Qwik framework.
 
-## Project Structure
+## Features
 
-This project is using Qwik with [QwikCity](https://qwik.dev/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
+- Google Material Design components built natively for Qwik
+- Styled using SCSS with customizable variables
+- Supports ES and CommonJS module formats
+- TypeScript types included for better developer experience
+- Lightweight and optimized for fast loading with Qwik's resumability
 
-Inside your project, you'll see the following directory structure:
+## Installation
 
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── routes/
-        └── ...
+Install the package via npm:
+
+```bash
+npm install qwik-material-ui
 ```
 
-- `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.dev/qwikcity/routing/overview/) for more info.
+## Basic Usage
 
-- `src/components`: Recommended directory for components.
+Import components in your Qwik app
 
-- `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
+```
+import { MaterialButton } from 'qwik-material-ui';
 
-## Add Integrations and deployment
-
-Use the `npm run qwik add` command to add additional integrations. Some examples of integrations includes: Cloudflare, Netlify or Express Server, and the [Static Site Generator (SSG)](https://qwik.dev/qwikcity/guides/static-site-generation/).
-
-```shell
-npm run qwik add # or `yarn qwik add`
+export const MyComponent = component$(() => {
+  return (
+    <MaterialButton onClick$={() => alert('Button clicked!')}>
+      Click Me
+    </MaterialButton>
+  );
+});
 ```
 
-## Development
+### Contribute
 
-Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
+Clone and set up the project locally:
 
-```shell
-npm start # or `yarn start`
+```bash
+git clone https://github.com/QwikPacks/qwik-material-ui.git
+cd qwik-material-ui
+npm install
+npm run dev
 ```
 
-> Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
+Build the library:
 
-## Preview
-
-The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to preview a production build locally and should not be used as a production server.
-
-```shell
-npm run preview # or `yarn preview`
+```
+npm run build
 ```
 
-## Production
+Contributions are welcome! Open issues or pull requests anytime.
 
-The production build will generate client and server modules by running both client and server build commands. The build command will use Typescript to run a type check on the source code.
+### Built for the [**Qwik**](https://qwik.dev) framework.
 
-```shell
-npm run build # or `yarn build`
-```
+I built it mainly to speed up my own workflow but I’m happy to have it open source for everyone to use.
