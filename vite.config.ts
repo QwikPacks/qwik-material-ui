@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 import { qwikVite } from '@builder.io/qwik/optimizer';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import dts from 'vite-plugin-dts';
-import path from 'path';
 
 
 export default defineConfig({
@@ -26,13 +25,5 @@ export default defineConfig({
     },
     outDir: 'dist', 
     emptyOutDir: true, 
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        includePaths: [path.resolve(__dirname, 'src/styles')],
-        additionalData: `@import "_variables.scss";`,
-      },
-    },
   },
 });

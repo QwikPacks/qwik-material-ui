@@ -18,8 +18,10 @@ Provides Google Material Design components optimized for the Qwik framework.
 Install the package via npm:
 
 ```bash
-npm install qwik-material-ui
+npm install -D qwik-material-ui
 ```
+
+To avoid optimization errors during Qwik’s build process, install this package as a devDependency.
 
 ## Basic Usage
 
