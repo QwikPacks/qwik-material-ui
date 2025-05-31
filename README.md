@@ -8,7 +8,7 @@ Provides Google Material Design components optimized for the Qwik framework.
 ## Features
 
 - Google Material Design components built natively for Qwik
-- Styled using SCSS with customizable variables
+- NO Tailwind CSS
 - Supports ES and CommonJS module formats
 - TypeScript types included for better developer experience
 - Lightweight and optimized for fast loading with Qwik's resumability
